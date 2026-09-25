@@ -33,6 +33,7 @@ public class NilaiAkhir{
         int dipotong = (int) akhir;
         long dibulatkan = Math.round(akhir);
         double selisih = akhir - dibulatkan;
+        boolean lulus = akhir >= 60;
 
         System.out.println("\n-----Nilai Akhir-----");
         System.out.println("Praktikum : " + praktikum + "(30%)");
@@ -42,6 +43,9 @@ public class NilaiAkhir{
         System.out.println("Nilai akhir : " + akhir);
         System.out.println("Dibulatkan : " + dipotong);
         System.out.println("Selisih : " + selisih);
+        System.out.println("Lulus (>=60) : " + lulus);
+
+        scanner.close();
 
     }
 }
