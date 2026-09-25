@@ -32,6 +32,7 @@ public class NilaiAkhir{
 
         int dipotong = (int) akhir;
         long dibulatkan = Math.round(akhir);
+        double selisih = akhir - dibulatkan;
 
         System.out.println("\n-----Nilai Akhir-----");
         System.out.println("Praktikum : " + praktikum + "(30%)");
@@ -39,7 +40,8 @@ public class NilaiAkhir{
         System.out.println("Mid : " + mid + "(20%)");
         System.out.println("Final : " + finalNilai + "(30%)");
         System.out.println("Nilai akhir : " + akhir);
-        System.out.println("Dipotong (int) : " + dipotong);
+        System.out.println("Dibulatkan : " + dipotong);
+        System.out.println("Selisih : " + selisih);
 
     }
 }
